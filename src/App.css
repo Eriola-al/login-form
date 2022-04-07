@@ -1,24 +1,14 @@
-.background { 
+.bg-img {
   background-repeat: no-repeat;
-}
-
-.login-form {
-    max-width: 300px;
-  }
-  
-.ant-btn {
-    width: 100%;
-    background-color: black !important;
-    color: white !important;
-}
-
-.card-form {
-  position: absolute;
-  background-color: white;
-  left: 50%;
-  transform: translate(-50%, 40%);
-  border-radius: 5px;
-}
+  background-position: center center;
+  object-fit: fill;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+ }
 
 .card-header h2 {
     margin-bottom: 0px;
@@ -32,12 +22,8 @@
     color: gray;
 }
 
-.bg-img {
-  object-fit: fill;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
+.ant-btn {
+  width: 100%;
+  background-color: black !important;
+  color: white !important;
 }

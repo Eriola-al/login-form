@@ -1,23 +1,16 @@
 import './App.css';
-import jordanCardo from './assets/jordanCardo.jpg';
+import image from './assets/image.jpg';
 import { Form, Input, Button, Card } from "antd";
 import { useState } from "react";
 
 
 function App() {
 
-  const [password, setPassword] = useState();
-    const [blurPx, setBlurPx] = useState(70)
-
-    const checkPassStrength = (e) => {
-        while(password.length < 12) {
-
-        }
-    }
+const [password, setPassword] = useState('');
 
   return (
-    <div className='background'>
-      <img src={jordanCardo} className="bg-img"/>
+    <>
+      <img src={image} className="bg-img" style={{filter: `blur(${24 - password.length * 2}px)`}}/>
       <Card className="card-form" style={{ width: 370 }}>
             <Form layout="vertical">
                 <div className="card-header">
@@ -30,21 +23,17 @@ function App() {
                 <Form.Item label="Password:">
                     <Input 
                     type="password" 
-                    placeholder="Enter Password" 
-                    onChange={(e) => setPassword(e.target.value.length)} />
-                    {console.log(password)}
+                    placeholder="Enter Password"
+                    onChange={(e) => setPassword(e.target.value)} />
                 </Form.Item>
                 <Form.Item>
-                    <Button
-                        type="default"
-                        htmlType="submit"
-                    >
+                    <Button type="default" htmlType="submit">
                         Submit
                     </Button>
                 </Form.Item>
             </Form>
         </Card>
-        </div>
+        </>
     );
 };
 
