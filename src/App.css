@@ -1,0 +1,43 @@
+.background { 
+  background-repeat: no-repeat;
+}
+
+.login-form {
+    max-width: 300px;
+  }
+  
+.ant-btn {
+    width: 100%;
+    background-color: black !important;
+    color: white !important;
+}
+
+.card-form {
+  position: absolute;
+  background-color: white;
+  left: 50%;
+  transform: translate(-50%, 40%);
+  border-radius: 5px;
+}
+
+.card-header h2 {
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+.card-header h4 {
+    text-align: center;
+    color: gray;
+}
+
+.bg-img {
+  object-fit: fill;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
