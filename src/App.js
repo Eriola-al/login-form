@@ -11,7 +11,7 @@ const [password, setPassword] = useState('');
   return (
     <>
       <img src={image} className="bg-img" style={{filter: `blur(${24 - password.length * 2}px)`}}/>
-      <Card className="card-form" style={{ width: 370 }}>
+      <Card>
             <Form layout="vertical">
                 <div className="card-header">
                     <h2>Image Password Strength</h2>
